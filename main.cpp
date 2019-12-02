@@ -272,10 +272,10 @@ public:
         for(int i=0;i<3; i++)
         {
             getParticle(0+i ,0)->offsetPos(Vec3(0.5,0.0,0.0)); // moving the particle a bit towards the center, to make it hang more natural - because I like it ;)
-            getParticle(0+i ,0)->makeUnmovable();
+            getParticle(num_particles_width/2 - i ,num_particles_height/2 - i)->makeUnmovable();
 
-            getParticle(0+i ,0)->offsetPos(Vec3(-0.5,0.0,0.0)); // moving the particle a bit towards the center, to make it hang more natural - because I like it ;)
-            getParticle(num_particles_width-1-i ,0)->makeUnmovable();
+            //getParticle(0+i ,0)->offsetPos(Vec3(-0.5,0.0,0.0)); // moving the particle a bit towards the center, to make it hang more natural - because I like it ;)
+            //getParticle(num_particles_width-1-i ,0)->makeUnmovable();
         }
     }
 
@@ -321,10 +321,7 @@ public:
             for(int y=0; y<num_particles_height-1; y++)
             {
                 Vec3 color(0,0,0);
-                if (x%2) // red and white color is interleaved according to which column number
-                    color = Vec3(0.6f,0.2f,0.2f);
-                else
-                    color = Vec3(1.0f,1.0f,1.0f);
+                color = Vec3(1.0f,1.0f,1.0f);
 
                 drawTriangle(getParticle(x+1,y),getParticle(x,y),getParticle(x,y+1),color);
                 drawTriangle(getParticle(x+1,y+1),getParticle(x+1,y),getParticle(x,y+1),color);
@@ -408,8 +405,8 @@ public:
 
 
 // Just below are three global variables holding the actual animated stuff; Cloth and Ball
-Cloth cloth1(14,10,55,45); // one Cloth object of the Cloth class
-Vec3 ball_pos(7,-5,0); // the center of our one ball
+Cloth cloth1(10,10,55,45); // one Cloth object of the Cloth class
+Vec3 ball_pos(5,-6,0); // the center of our one ball
 float ball_radius = 2; // the radius of our one ball
 
 
@@ -449,15 +446,9 @@ void init(GLvoid)
 }
 
 
-float ball_time = 0; // counter for used to calculate the z position of the ball below
-
 /* display method called each frame*/
 void display(void)
 {
-    // calculating positions
-
-    ball_time++;
-    ball_pos.f[2] = cos(ball_time/50.0)*7;
 
     cloth1.addForce(Vec3(0,-0.2,0)*TIME_STEPSIZE2); // add gravity each frame, pointing down
     cloth1.windForce(Vec3(0.5,0,0.2)*TIME_STEPSIZE2); // generate some wind each frame
@@ -488,7 +479,7 @@ void display(void)
 
     glPushMatrix(); // to draw the ball we use glutSolidSphere, and need to draw the sphere at the position of the ball
     glTranslatef(ball_pos.f[0],ball_pos.f[1],ball_pos.f[2]); // hence the translation of the sphere onto the ball position
-    glColor3f(0.4f,0.8f,0.5f);
+    glColor3f(1.0f,1.0f,1.0f);
     glutSolidSphere(ball_radius-0.1,50,50); // draw the ball, but with a slightly lower radius, otherwise we could get ugly visual artifacts of cloth penetrating the ball slightly
     glPopMatrix();
 
