@@ -7,7 +7,7 @@ find_package(OpenGL REQUIRED)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp cugl.cpp)
+set(SOURCE_FILES main.cpp utils/Vec3.cpp utils/Particle.cpp utils/Constraint.cpp utils/Cloth.cpp)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/GLM/glm)
 

@@ -122,33 +122,6 @@ ClothSimulation/fast:
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/build
 .PHONY : ClothSimulation/fast
 
-cugl.obj: cugl.cpp.obj
-
-.PHONY : cugl.obj
-
-# target to build an object file
-cugl.cpp.obj:
-	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/cugl.cpp.obj
-.PHONY : cugl.cpp.obj
-
-cugl.i: cugl.cpp.i
-
-.PHONY : cugl.i
-
-# target to preprocess a source file
-cugl.cpp.i:
-	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/cugl.cpp.i
-.PHONY : cugl.cpp.i
-
-cugl.s: cugl.cpp.s
-
-.PHONY : cugl.s
-
-# target to generate assembly for a file
-cugl.cpp.s:
-	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/cugl.cpp.s
-.PHONY : cugl.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -176,6 +149,114 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+utils/Cloth.obj: utils/Cloth.cpp.obj
+
+.PHONY : utils/Cloth.obj
+
+# target to build an object file
+utils/Cloth.cpp.obj:
+	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.obj
+.PHONY : utils/Cloth.cpp.obj
+
+utils/Cloth.i: utils/Cloth.cpp.i
+
+.PHONY : utils/Cloth.i
+
+# target to preprocess a source file
+utils/Cloth.cpp.i:
+	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.i
+.PHONY : utils/Cloth.cpp.i
+
+utils/Cloth.s: utils/Cloth.cpp.s
+
+.PHONY : utils/Cloth.s
+
+# target to generate assembly for a file
+utils/Cloth.cpp.s:
+	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.s
+.PHONY : utils/Cloth.cpp.s
+
+utils/Constraint.obj: utils/Constraint.cpp.obj
+
+.PHONY : utils/Constraint.obj
+
+# target to build an object file
+utils/Constraint.cpp.obj:
+	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.obj
+.PHONY : utils/Constraint.cpp.obj
+
+utils/Constraint.i: utils/Constraint.cpp.i
+
+.PHONY : utils/Constraint.i
+
+# target to preprocess a source file
+utils/Constraint.cpp.i:
+	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.i
+.PHONY : utils/Constraint.cpp.i
+
+utils/Constraint.s: utils/Constraint.cpp.s
+
+.PHONY : utils/Constraint.s
+
+# target to generate assembly for a file
+utils/Constraint.cpp.s:
+	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.s
+.PHONY : utils/Constraint.cpp.s
+
+utils/Particle.obj: utils/Particle.cpp.obj
+
+.PHONY : utils/Particle.obj
+
+# target to build an object file
+utils/Particle.cpp.obj:
+	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.obj
+.PHONY : utils/Particle.cpp.obj
+
+utils/Particle.i: utils/Particle.cpp.i
+
+.PHONY : utils/Particle.i
+
+# target to preprocess a source file
+utils/Particle.cpp.i:
+	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.i
+.PHONY : utils/Particle.cpp.i
+
+utils/Particle.s: utils/Particle.cpp.s
+
+.PHONY : utils/Particle.s
+
+# target to generate assembly for a file
+utils/Particle.cpp.s:
+	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.s
+.PHONY : utils/Particle.cpp.s
+
+utils/Vec3.obj: utils/Vec3.cpp.obj
+
+.PHONY : utils/Vec3.obj
+
+# target to build an object file
+utils/Vec3.cpp.obj:
+	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.obj
+.PHONY : utils/Vec3.cpp.obj
+
+utils/Vec3.i: utils/Vec3.cpp.i
+
+.PHONY : utils/Vec3.i
+
+# target to preprocess a source file
+utils/Vec3.cpp.i:
+	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.i
+.PHONY : utils/Vec3.cpp.i
+
+utils/Vec3.s: utils/Vec3.cpp.s
+
+.PHONY : utils/Vec3.s
+
+# target to generate assembly for a file
+utils/Vec3.cpp.s:
+	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.s
+.PHONY : utils/Vec3.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -185,12 +266,21 @@ help:
 	@echo ... edit_cache
 	@echo ... ClothSimulation
 	@echo ... rebuild_cache
-	@echo ... cugl.obj
-	@echo ... cugl.i
-	@echo ... cugl.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... utils/Cloth.obj
+	@echo ... utils/Cloth.i
+	@echo ... utils/Cloth.s
+	@echo ... utils/Constraint.obj
+	@echo ... utils/Constraint.i
+	@echo ... utils/Constraint.s
+	@echo ... utils/Particle.obj
+	@echo ... utils/Particle.i
+	@echo ... utils/Particle.s
+	@echo ... utils/Vec3.obj
+	@echo ... utils/Vec3.i
+	@echo ... utils/Vec3.s
 .PHONY : help
 
 

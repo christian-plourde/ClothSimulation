@@ -70,30 +70,78 @@ CMakeFiles/ClothSimulation.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClothSimulation.dir/main.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\source\ClothSimulation\main.cpp -o CMakeFiles\ClothSimulation.dir\main.cpp.s
 
-CMakeFiles/ClothSimulation.dir/cugl.cpp.obj: CMakeFiles/ClothSimulation.dir/flags.make
-CMakeFiles/ClothSimulation.dir/cugl.cpp.obj: CMakeFiles/ClothSimulation.dir/includes_CXX.rsp
-CMakeFiles/ClothSimulation.dir/cugl.cpp.obj: ../cugl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\source\ClothSimulation\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ClothSimulation.dir/cugl.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ClothSimulation.dir\cugl.cpp.obj -c D:\source\ClothSimulation\cugl.cpp
+CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.obj: CMakeFiles/ClothSimulation.dir/flags.make
+CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.obj: CMakeFiles/ClothSimulation.dir/includes_CXX.rsp
+CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.obj: ../utils/Vec3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\source\ClothSimulation\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ClothSimulation.dir\utils\Vec3.cpp.obj -c D:\source\ClothSimulation\utils\Vec3.cpp
 
-CMakeFiles/ClothSimulation.dir/cugl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClothSimulation.dir/cugl.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\source\ClothSimulation\cugl.cpp > CMakeFiles\ClothSimulation.dir\cugl.cpp.i
+CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\source\ClothSimulation\utils\Vec3.cpp > CMakeFiles\ClothSimulation.dir\utils\Vec3.cpp.i
 
-CMakeFiles/ClothSimulation.dir/cugl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClothSimulation.dir/cugl.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\source\ClothSimulation\cugl.cpp -o CMakeFiles\ClothSimulation.dir\cugl.cpp.s
+CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\source\ClothSimulation\utils\Vec3.cpp -o CMakeFiles\ClothSimulation.dir\utils\Vec3.cpp.s
+
+CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.obj: CMakeFiles/ClothSimulation.dir/flags.make
+CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.obj: CMakeFiles/ClothSimulation.dir/includes_CXX.rsp
+CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.obj: ../utils/Particle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\source\ClothSimulation\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ClothSimulation.dir\utils\Particle.cpp.obj -c D:\source\ClothSimulation\utils\Particle.cpp
+
+CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\source\ClothSimulation\utils\Particle.cpp > CMakeFiles\ClothSimulation.dir\utils\Particle.cpp.i
+
+CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\source\ClothSimulation\utils\Particle.cpp -o CMakeFiles\ClothSimulation.dir\utils\Particle.cpp.s
+
+CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.obj: CMakeFiles/ClothSimulation.dir/flags.make
+CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.obj: CMakeFiles/ClothSimulation.dir/includes_CXX.rsp
+CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.obj: ../utils/Constraint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\source\ClothSimulation\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ClothSimulation.dir\utils\Constraint.cpp.obj -c D:\source\ClothSimulation\utils\Constraint.cpp
+
+CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\source\ClothSimulation\utils\Constraint.cpp > CMakeFiles\ClothSimulation.dir\utils\Constraint.cpp.i
+
+CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\source\ClothSimulation\utils\Constraint.cpp -o CMakeFiles\ClothSimulation.dir\utils\Constraint.cpp.s
+
+CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.obj: CMakeFiles/ClothSimulation.dir/flags.make
+CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.obj: CMakeFiles/ClothSimulation.dir/includes_CXX.rsp
+CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.obj: ../utils/Cloth.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\source\ClothSimulation\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ClothSimulation.dir\utils\Cloth.cpp.obj -c D:\source\ClothSimulation\utils\Cloth.cpp
+
+CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\source\ClothSimulation\utils\Cloth.cpp > CMakeFiles\ClothSimulation.dir\utils\Cloth.cpp.i
+
+CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\source\ClothSimulation\utils\Cloth.cpp -o CMakeFiles\ClothSimulation.dir\utils\Cloth.cpp.s
 
 # Object files for target ClothSimulation
 ClothSimulation_OBJECTS = \
 "CMakeFiles/ClothSimulation.dir/main.cpp.obj" \
-"CMakeFiles/ClothSimulation.dir/cugl.cpp.obj"
+"CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.obj" \
+"CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.obj" \
+"CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.obj" \
+"CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.obj"
 
 # External object files for target ClothSimulation
 ClothSimulation_EXTERNAL_OBJECTS =
 
 ClothSimulation.exe: CMakeFiles/ClothSimulation.dir/main.cpp.obj
-ClothSimulation.exe: CMakeFiles/ClothSimulation.dir/cugl.cpp.obj
+ClothSimulation.exe: CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.obj
+ClothSimulation.exe: CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.obj
+ClothSimulation.exe: CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.obj
+ClothSimulation.exe: CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.obj
 ClothSimulation.exe: CMakeFiles/ClothSimulation.dir/build.make
 ClothSimulation.exe: ../GLEW/lib/libglew32.dll.a
 ClothSimulation.exe: ../GLFW/lib-mingw-w64/libglfw3.a
@@ -101,7 +149,7 @@ ClothSimulation.exe: ../GLUT/lib/libfreeglut.dll.a
 ClothSimulation.exe: CMakeFiles/ClothSimulation.dir/linklibs.rsp
 ClothSimulation.exe: CMakeFiles/ClothSimulation.dir/objects1.rsp
 ClothSimulation.exe: CMakeFiles/ClothSimulation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\source\ClothSimulation\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ClothSimulation.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\source\ClothSimulation\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ClothSimulation.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ClothSimulation.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

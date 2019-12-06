@@ -4,8 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/source/ClothSimulation/cugl.cpp" "D:/source/ClothSimulation/cmake-build-debug/CMakeFiles/ClothSimulation.dir/cugl.cpp.obj"
   "D:/source/ClothSimulation/main.cpp" "D:/source/ClothSimulation/cmake-build-debug/CMakeFiles/ClothSimulation.dir/main.cpp.obj"
+  "D:/source/ClothSimulation/utils/Cloth.cpp" "D:/source/ClothSimulation/cmake-build-debug/CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.obj"
+  "D:/source/ClothSimulation/utils/Constraint.cpp" "D:/source/ClothSimulation/cmake-build-debug/CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.obj"
+  "D:/source/ClothSimulation/utils/Particle.cpp" "D:/source/ClothSimulation/cmake-build-debug/CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.obj"
+  "D:/source/ClothSimulation/utils/Vec3.cpp" "D:/source/ClothSimulation/cmake-build-debug/CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

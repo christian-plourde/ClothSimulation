@@ -90,10 +90,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/source/ClothSimulation/cugl.cpp">
+		<Unit filename="D:/source/ClothSimulation/main.cpp">
 			<Option target="ClothSimulation"/>
 		</Unit>
-		<Unit filename="D:/source/ClothSimulation/main.cpp">
+		<Unit filename="D:/source/ClothSimulation/utils/Cloth.cpp">
+			<Option target="ClothSimulation"/>
+		</Unit>
+		<Unit filename="D:/source/ClothSimulation/utils/Constraint.cpp">
+			<Option target="ClothSimulation"/>
+		</Unit>
+		<Unit filename="D:/source/ClothSimulation/utils/Particle.cpp">
+			<Option target="ClothSimulation"/>
+		</Unit>
+		<Unit filename="D:/source/ClothSimulation/utils/Vec3.cpp">
 			<Option target="ClothSimulation"/>
 		</Unit>
 		<Unit filename="D:/source/ClothSimulation/CMakeLists.txt">
