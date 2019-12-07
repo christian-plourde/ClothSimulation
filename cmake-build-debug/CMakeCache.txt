@@ -253,6 +253,9 @@ GLFW_LIBRARIES:FILEPATH=D:/source/ClothSimulation/GLFW/lib-mingw-w64/libglfw3.a
 //Path to a library.
 GLUT_LIBRARIES:FILEPATH=D:/source/ClothSimulation/GLUT/lib/libfreeglut.dll.a
 
+//Dependencies for the target
+Ghost_LIB_DEPENDS:STATIC=general;opengl32;general;glu32;general;D:/source/ClothSimulation/GLEW/lib/libglew32.dll.a;general;D:/source/ClothSimulation/GLFW/lib-mingw-w64/libglfw3.a;general;D:/source/ClothSimulation/GLUT/lib/libfreeglut.dll.a;
+
 //OpenGL library for win32
 OPENGL_gl_LIBRARY:STRING=opengl32
 

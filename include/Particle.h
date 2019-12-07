@@ -8,6 +8,8 @@
 #define TIME_STEPSIZE2 0.5*0.5 // how large time step each particle takes each frame
 #define CONSTRAINT_ITERATIONS 15 // how many iterations of constraint satisfaction each frame (more is rigid, less is soft)
 
+
+
 /* The particle class represents a particle of mass that can move around in 3D space*/
 class Particle
 {
@@ -20,11 +22,12 @@ private:
     Vec3 accumulated_normal; // an accumulated normal (i.e. non normalized), used for OpenGL soft shading
 
 
+
 public:
     Particle(Vec3 pos);
     Particle();
-
     void addForce(Vec3 f);
+    bool is_set;
 
     /* This is one of the important methods, where the time is progressed a single step size (TIME_STEPSIZE)
        The method is called by Cloth.time_step()
@@ -42,6 +45,12 @@ public:
     Vec3& getNormal();
 
     void resetNormal();
+
+    void setPos(Vec3 pos);
+
+    bool isBehind(Vec3 move_speed, Vec3 check_pos);
+
+    inline bool is_movable(){return movable;}
 
 };
 

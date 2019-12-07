@@ -3,14 +3,10 @@
 #include <glew.h>
 #include "GLUT/GL/glut.h"
 
-#include <Vec3.h>
-#include <Cloth.h>
+#include <Ghost.h>
 
 // Just below are three global variables holding the actual animated stuff; Cloth and Ball
-Cloth cloth1(10,10,55,45); // one Cloth object of the Cloth class
-Vec3 ball_pos(5,-6,0); // the center of our one ball
-float ball_radius = 2; // the radius of our one ball
-
+Ghost ghost(1.5, Vec3(1.0f, 1.0f, 1.0f));
 
 
 /***** Below are functions Init(), display(), reshape(), keyboard(), arrow_keys(), main() *****/
@@ -51,16 +47,6 @@ void init(GLvoid)
 /* display method called each frame*/
 void display(void)
 {
-
-    cloth1.addForce(Vec3(0,-0.2,0)*TIME_STEPSIZE2); // add gravity each frame, pointing down
-    cloth1.windForce(Vec3(0.5,0,0.2)*TIME_STEPSIZE2); // generate some wind each frame
-    cloth1.timeStep(); // calculate the particle positions of the next frame
-    cloth1.ballCollision(ball_pos,ball_radius); // resolve collision with the ball
-
-
-
-    // drawing
-
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glLoadIdentity();
 
@@ -75,15 +61,9 @@ void display(void)
     glEnd();
     glEnable(GL_LIGHTING);
 
-    glTranslatef(-6.5,6,-9.0f); // move camera out and center on the cloth
-    glRotatef(25,0,1,0); // rotate a bit to see the cloth from the side
-    cloth1.drawShaded(); // finally draw the cloth with smooth shading
-
-    glPushMatrix(); // to draw the ball we use glutSolidSphere, and need to draw the sphere at the position of the ball
-    glTranslatef(ball_pos.f[0],ball_pos.f[1],ball_pos.f[2]); // hence the translation of the sphere onto the ball position
-    glColor3f(1.0f,1.0f,1.0f);
-    glutSolidSphere(ball_radius-0.1,50,50); // draw the ball, but with a slightly lower radius, otherwise we could get ugly visual artifacts of cloth penetrating the ball slightly
-    glPopMatrix();
+    glTranslatef(-6.5,-2,-7.0f); // move camera out and center on the cloth
+    glRotatef(60,0,1,0); // rotate a bit to see the cloth from the side
+    ghost.display();
 
     glutSwapBuffers();
     glutPostRedisplay();

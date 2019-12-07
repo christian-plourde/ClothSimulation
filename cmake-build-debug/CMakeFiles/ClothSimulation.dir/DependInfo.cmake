@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/source/ClothSimulation/main.cpp" "D:/source/ClothSimulation/cmake-build-debug/CMakeFiles/ClothSimulation.dir/main.cpp.obj"
   "D:/source/ClothSimulation/utils/Cloth.cpp" "D:/source/ClothSimulation/cmake-build-debug/CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.obj"
   "D:/source/ClothSimulation/utils/Constraint.cpp" "D:/source/ClothSimulation/cmake-build-debug/CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.obj"
+  "D:/source/ClothSimulation/utils/Ghost.cpp" "D:/source/ClothSimulation/cmake-build-debug/CMakeFiles/ClothSimulation.dir/utils/Ghost.cpp.obj"
   "D:/source/ClothSimulation/utils/Particle.cpp" "D:/source/ClothSimulation/cmake-build-debug/CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.obj"
   "D:/source/ClothSimulation/utils/Vec3.cpp" "D:/source/ClothSimulation/cmake-build-debug/CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.obj"
   )

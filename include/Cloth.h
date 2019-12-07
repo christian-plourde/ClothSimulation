@@ -35,6 +35,8 @@ private:
     /* A private method used by drawShaded(), that draws a single triangle p1,p2,p3 with a color*/
     void drawTriangle(Particle *p1, Particle *p2, Particle *p3, const Vec3 color);
 
+    Vec3 color;
+
 public:
 
     /* This is a important constructor for the entire system of particles and constraints*/
@@ -68,6 +70,10 @@ public:
     This also means that the sphere can "slip through" if the ball is small enough compared to the distance in the grid bewteen particles
     */
     void ballCollision(const Vec3 center,const float radius );
+
+    void move(Vec3 move_speed, Vec3 ball_pos);
+
+    inline void setColor(Vec3 c){this->color = c;}
 
 };
 

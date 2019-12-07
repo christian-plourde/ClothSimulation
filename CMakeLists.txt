@@ -7,7 +7,7 @@ find_package(OpenGL REQUIRED)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp utils/Vec3.cpp utils/Particle.cpp utils/Constraint.cpp utils/Cloth.cpp)
+set(SOURCE_FILES main.cpp utils/Vec3.cpp utils/Particle.cpp utils/Constraint.cpp utils/Cloth.cpp utils/Ghost.cpp)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/GLM/glm)
 
@@ -24,5 +24,8 @@ include_directories("include")
 
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES})
 
+add_library(Ghost SHARED ${SOURCE_FILES})
+
 # Linking GLFW and OGL
 target_link_libraries(${CMAKE_PROJECT_NAME} ${OPENGL_LIBRARY} ${GLEW_LIBRARIES} ${GLFW_LIBRARIES} ${GLUT_LIBRARIES})
+target_link_libraries(Ghost ${OPENGL_LIBRARY} ${GLEW_LIBRARIES} ${GLFW_LIBRARIES} ${GLUT_LIBRARIES})

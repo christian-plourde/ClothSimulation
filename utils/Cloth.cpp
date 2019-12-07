@@ -1,4 +1,5 @@
 #include <Cloth.h>
+#include <iostream>
 
 Particle * Cloth::getParticle(int x, int y)
 {
@@ -60,9 +61,10 @@ Cloth::Cloth(float width, float height, int num_particles_width, int num_particl
         for(int y=0; y<num_particles_height; y++)
         {
             Vec3 pos = Vec3(width * (x/(float)num_particles_width),
-                            -height * (y/(float)num_particles_height),
-                            0);
+                            0,
+                            -height * (y/(float)num_particles_height));
             particles[y*num_particles_width+x]= Particle(pos); // insert particle in column x at y'th row
+
         }
     }
 
@@ -92,14 +94,7 @@ Cloth::Cloth(float width, float height, int num_particles_width, int num_particl
 
 
     // making the upper left most three and right most three particles unmovable
-    for(int i=0;i<3; i++)
-    {
-        getParticle(0+i ,0)->offsetPos(Vec3(0.5,0.0,0.0)); // moving the particle a bit towards the center, to make it hang more natural - because I like it ;)
-        getParticle(num_particles_width/2 - i ,num_particles_height/2 - i)->makeUnmovable();
-
-        //getParticle(0+i ,0)->offsetPos(Vec3(-0.5,0.0,0.0)); // moving the particle a bit towards the center, to make it hang more natural - because I like it ;)
-        //getParticle(num_particles_width-1-i ,0)->makeUnmovable();
-    }
+        getParticle(num_particles_width/2,num_particles_height/2)->makeUnmovable();
 }
 
 void Cloth::drawShaded()
@@ -133,9 +128,6 @@ void Cloth::drawShaded()
     {
         for(int y=0; y<num_particles_height-1; y++)
         {
-            Vec3 color(0,0,0);
-            color = Vec3(1.0f,1.0f,1.0f);
-
             drawTriangle(getParticle(x+1,y),getParticle(x,y),getParticle(x,y+1),color);
             drawTriangle(getParticle(x+1,y+1),getParticle(x+1,y),getParticle(x,y+1),color);
         }
@@ -193,6 +185,17 @@ void Cloth::ballCollision(const Vec3 center, const float radius)
         if ( v.length() < radius) // if the particle is inside the ball
         {
             (*particle).offsetPos(v.normalized()*(radius-l)); // project the particle to the surface of the ball
+            (*particle).is_set = true;
         }
+    }
+}
+
+void Cloth::move(Vec3 move_speed, Vec3 ball_pos)
+{
+    for(int i = 0; i < particles.size(); i++)
+    {
+        if(!particles[i].is_movable())
+            particles[i].setPos(particles[i].getPos() + move_speed);
+
     }
 }

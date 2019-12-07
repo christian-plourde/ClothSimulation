@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ClothSimulation.dir/main.cpp.obj"
   "CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.obj"
   "CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.obj"
+  "CMakeFiles/ClothSimulation.dir/utils/Ghost.cpp.obj"
   "CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.obj"
   "CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.obj"
   "ClothSimulation.exe"

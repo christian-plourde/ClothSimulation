@@ -110,6 +110,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Ghost
+
+# Build rule for target.
+Ghost: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Ghost
+.PHONY : Ghost
+
+# fast build rule for target.
+Ghost/fast:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/build
+.PHONY : Ghost/fast
+
+#=============================================================================
 # Target rules for targets named ClothSimulation
 
 # Build rule for target.
@@ -128,6 +141,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/main.cpp.obj
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
@@ -137,6 +151,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/main.cpp.i
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/main.cpp.i
 .PHONY : main.cpp.i
 
@@ -146,6 +161,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/main.cpp.s
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/main.cpp.s
 .PHONY : main.cpp.s
 
@@ -155,6 +171,7 @@ utils/Cloth.obj: utils/Cloth.cpp.obj
 
 # target to build an object file
 utils/Cloth.cpp.obj:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/utils/Cloth.cpp.obj
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.obj
 .PHONY : utils/Cloth.cpp.obj
 
@@ -164,6 +181,7 @@ utils/Cloth.i: utils/Cloth.cpp.i
 
 # target to preprocess a source file
 utils/Cloth.cpp.i:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/utils/Cloth.cpp.i
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.i
 .PHONY : utils/Cloth.cpp.i
 
@@ -173,6 +191,7 @@ utils/Cloth.s: utils/Cloth.cpp.s
 
 # target to generate assembly for a file
 utils/Cloth.cpp.s:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/utils/Cloth.cpp.s
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Cloth.cpp.s
 .PHONY : utils/Cloth.cpp.s
 
@@ -182,6 +201,7 @@ utils/Constraint.obj: utils/Constraint.cpp.obj
 
 # target to build an object file
 utils/Constraint.cpp.obj:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/utils/Constraint.cpp.obj
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.obj
 .PHONY : utils/Constraint.cpp.obj
 
@@ -191,6 +211,7 @@ utils/Constraint.i: utils/Constraint.cpp.i
 
 # target to preprocess a source file
 utils/Constraint.cpp.i:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/utils/Constraint.cpp.i
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.i
 .PHONY : utils/Constraint.cpp.i
 
@@ -200,8 +221,39 @@ utils/Constraint.s: utils/Constraint.cpp.s
 
 # target to generate assembly for a file
 utils/Constraint.cpp.s:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/utils/Constraint.cpp.s
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Constraint.cpp.s
 .PHONY : utils/Constraint.cpp.s
+
+utils/Ghost.obj: utils/Ghost.cpp.obj
+
+.PHONY : utils/Ghost.obj
+
+# target to build an object file
+utils/Ghost.cpp.obj:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/utils/Ghost.cpp.obj
+	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Ghost.cpp.obj
+.PHONY : utils/Ghost.cpp.obj
+
+utils/Ghost.i: utils/Ghost.cpp.i
+
+.PHONY : utils/Ghost.i
+
+# target to preprocess a source file
+utils/Ghost.cpp.i:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/utils/Ghost.cpp.i
+	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Ghost.cpp.i
+.PHONY : utils/Ghost.cpp.i
+
+utils/Ghost.s: utils/Ghost.cpp.s
+
+.PHONY : utils/Ghost.s
+
+# target to generate assembly for a file
+utils/Ghost.cpp.s:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/utils/Ghost.cpp.s
+	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Ghost.cpp.s
+.PHONY : utils/Ghost.cpp.s
 
 utils/Particle.obj: utils/Particle.cpp.obj
 
@@ -209,6 +261,7 @@ utils/Particle.obj: utils/Particle.cpp.obj
 
 # target to build an object file
 utils/Particle.cpp.obj:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/utils/Particle.cpp.obj
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.obj
 .PHONY : utils/Particle.cpp.obj
 
@@ -218,6 +271,7 @@ utils/Particle.i: utils/Particle.cpp.i
 
 # target to preprocess a source file
 utils/Particle.cpp.i:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/utils/Particle.cpp.i
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.i
 .PHONY : utils/Particle.cpp.i
 
@@ -227,6 +281,7 @@ utils/Particle.s: utils/Particle.cpp.s
 
 # target to generate assembly for a file
 utils/Particle.cpp.s:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/utils/Particle.cpp.s
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Particle.cpp.s
 .PHONY : utils/Particle.cpp.s
 
@@ -236,6 +291,7 @@ utils/Vec3.obj: utils/Vec3.cpp.obj
 
 # target to build an object file
 utils/Vec3.cpp.obj:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/utils/Vec3.cpp.obj
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.obj
 .PHONY : utils/Vec3.cpp.obj
 
@@ -245,6 +301,7 @@ utils/Vec3.i: utils/Vec3.cpp.i
 
 # target to preprocess a source file
 utils/Vec3.cpp.i:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/utils/Vec3.cpp.i
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.i
 .PHONY : utils/Vec3.cpp.i
 
@@ -254,6 +311,7 @@ utils/Vec3.s: utils/Vec3.cpp.s
 
 # target to generate assembly for a file
 utils/Vec3.cpp.s:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/utils/Vec3.cpp.s
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/utils/Vec3.cpp.s
 .PHONY : utils/Vec3.cpp.s
 
@@ -264,6 +322,7 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... Ghost
 	@echo ... ClothSimulation
 	@echo ... rebuild_cache
 	@echo ... main.obj
@@ -275,6 +334,9 @@ help:
 	@echo ... utils/Constraint.obj
 	@echo ... utils/Constraint.i
 	@echo ... utils/Constraint.s
+	@echo ... utils/Ghost.obj
+	@echo ... utils/Ghost.i
+	@echo ... utils/Ghost.s
 	@echo ... utils/Particle.obj
 	@echo ... utils/Particle.i
 	@echo ... utils/Particle.s

@@ -52,11 +52,13 @@ CMAKE_BINARY_DIR = D:\source\ClothSimulation\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/Ghost.dir/all
 all: CMakeFiles/ClothSimulation.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
+clean: CMakeFiles/Ghost.dir/clean
 clean: CMakeFiles/ClothSimulation.dir/clean
 
 .PHONY : clean
@@ -67,18 +69,45 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
+# Target rules for target CMakeFiles/Ghost.dir
+
+# All Build rule for target.
+CMakeFiles/Ghost.dir/all:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/depend
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\source\ClothSimulation\cmake-build-debug\CMakeFiles --progress-num=8,9,10,11,12,13,14 "Built target Ghost"
+.PHONY : CMakeFiles/Ghost.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Ghost.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\source\ClothSimulation\cmake-build-debug\CMakeFiles 7
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Ghost.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\source\ClothSimulation\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/Ghost.dir/rule
+
+# Convenience name for target.
+Ghost: CMakeFiles/Ghost.dir/rule
+
+.PHONY : Ghost
+
+# clean rule for target.
+CMakeFiles/Ghost.dir/clean:
+	$(MAKE) -f CMakeFiles\Ghost.dir\build.make CMakeFiles/Ghost.dir/clean
+.PHONY : CMakeFiles/Ghost.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/ClothSimulation.dir
 
 # All Build rule for target.
 CMakeFiles/ClothSimulation.dir/all:
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/depend
 	$(MAKE) -f CMakeFiles\ClothSimulation.dir\build.make CMakeFiles/ClothSimulation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\source\ClothSimulation\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target ClothSimulation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\source\ClothSimulation\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target ClothSimulation"
 .PHONY : CMakeFiles/ClothSimulation.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ClothSimulation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\source\ClothSimulation\cmake-build-debug\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\source\ClothSimulation\cmake-build-debug\CMakeFiles 7
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/ClothSimulation.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\source\ClothSimulation\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/ClothSimulation.dir/rule
